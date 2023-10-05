@@ -1,15 +1,22 @@
+#!/bin/bash
 
-read -p "Ingresa el valor de : <h1 id="titulo1">Calculadora Cultural</h1>" titulo1
+# Prompt for the title of the HTML file
+read -p "Enter the title for the HTML file: " title
 
+# Remove spaces from the title and replace them with underscores
+title=$(echo "$title" | tr ' ' '_')
+
+# Create the HTML file with the provided title
+cat <<EOL > "$title.html"
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Calculadora Cultural</title>
+    <title>$title</title>
     <script src="calculadoramejorada.js" defer></script>
 </head>
 <body>
-    <h1 id="">Calculadora Cultural</h1>
+    <h1 id="titulo1">Calculadora Cultural</h1>
     <div class="resultado">
         Haz calculadora cultural
         <br /><br />
@@ -41,3 +48,6 @@ read -p "Ingresa el valor de : <h1 id="titulo1">Calculadora Cultural</h1>" titul
     </div>
 </body>
 </html>
+EOL
+
+echo "HTML file ($title.html) created successfully!"
