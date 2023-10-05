@@ -7,12 +7,18 @@ echo "Introducir el nombre del ID del segundo número"
 read -p "Introduce el nombre de la segunda variable (por ejemplo, var2): " variable2
 
 echo 'Introduce el valor de variable1 en function compararNumeros() {
-        $var $variable1 = document.getElementById("'$variable1'")'
-read -p "Introduce el nombre de la segunda variable (por ejemplo, numero1): " variable1_value
+        $var $variable1 = document.getElementById("'"$variable1"'")'
+read -p "Introduce el nombre de la primera variable (por ejemplo, numero1): " variable1_value
+
+
 echo 'Introduce el valor de variable2 en function compararNumeros() {
-        $var $variable2 = document.getElementById("'$variable1'")'
+        $var $variable2 = document.getElementById("'"$variable2"'")'
 read -p "Introduce el nombre de la segunda variable (por ejemplo, numero2): " variable2_value
-read -p "Introduce el nombre de la segunda variable (por ejemplo, let o const): " var
+
+
+read -p "Introduce el valor antes de variable (por ejemplo, let o const o var): " var
+
+
 
 
 # Nombre del archivo de salida
