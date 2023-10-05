@@ -1,0 +1,5 @@
+        # Ejemeplos selectores:
+        # var $variable1 = document.getElementsByName("nombreDelElemento")[0];
+        # var $variable2 = document.getElementsByClassName("nombreDeLaClase")[0];
+        # var $variable3 = document.getElementsByTagName("div")[0];
+        # var $variable4 = document.querySelectorAll("selectorCSS")[0];
